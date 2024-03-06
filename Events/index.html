@@ -7,7 +7,7 @@
     <title>Events</title>
 </head>
 <body>
-    <h1>Mouse Events</h1>
+    <!-- <h1>Mouse Events</h1>
     <button onclick="fun();">onclick</button>
     <br><br>
     <button ondblclick="fun();">ondblclick</button>
@@ -21,7 +21,7 @@
     <button onmouseup="fun();">onmouseup</button>
     <br><br>
     <button onmouseleave="fun();">onmouseleave</button>
-    <br><br>
+    <br><br> -->
 
     <h1 id="head">Welcome to the Class</h1>
 
@@ -29,14 +29,27 @@
 
 <h1>Addition of 2 Number</h1>
 
-<form action="" onsubmit="add();">
+<form action="" onsubmit="add(); return false">
   <label for="">Number 1</label>
   <input type="text" id="n1"><br><br>
   <label for="">Number 2</label>
   <input type="text" id="n2"><br><br>
-  <input type="submit">
+  <label for="">Additions</label>
+  <input type="submit" id="submit">
 </form>
-<h1 id="ans">0</h1>
+<h1 id="ans"></h1>
+
+<ul type="none">
+    <li class="c">Home</li>
+    <li class="c">Contact</li>
+    <li class="c">Service</li>
+    <li class="c">Gallary</li>
+    <li class="c">About</li>
+</ul>
+
+<div id="main">
+
+</div>
     <script src="script.js"></script>
     <script src="dom.js"></script>
     <script src="add.js"></script>

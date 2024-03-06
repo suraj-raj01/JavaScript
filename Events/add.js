@@ -1,10 +1,11 @@
 
-const a = parseInt(document.getElementById('n1').value);
-const b = parseInt(document.getElementById('n2').value);
-const ans = parseInt(document.getElementById('ans').value);
+// Addtion of two number
 
 function add()
 {
-    const answer = a+b;
-    ans.innerHTML = answer;
+let a = parseInt(document.getElementById('n1').value);
+let b = parseInt(document.getElementById('n2').value);
+let ans = document.getElementById('ans');
+
+    ans.innerHTML = a+b;
 }

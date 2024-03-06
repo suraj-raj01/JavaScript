@@ -7,3 +7,19 @@ button{
     border-radius: 5px;
     border: none;
 }
+
+input {
+    height: 30px;
+    width: 300px;
+}
+
+#submit{
+    background-color: green;
+    color:aliceblue;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+ul{
+    margin-left: -40px;
+}
