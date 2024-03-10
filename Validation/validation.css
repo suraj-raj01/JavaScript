@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: ghostwhite;
+    color: white;
+}
+form{
+    margin: 70px auto;
+    height: 600px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #06454ab1;
+    box-shadow: -15px 15px 30px black;
+}
+form input{
+    margin: 0 auto;
+    padding: 15px 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+form label{
+    margin-left: 75px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0px 0px 10px 0px;
+}
+form #submit{
+    background-color: green;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
