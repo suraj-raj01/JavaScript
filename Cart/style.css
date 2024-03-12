@@ -1,0 +1,13 @@
+i{
+    font-size: 80px;
+    margin-left: 580px;
+}
+button{
+    padding: 20px 40px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+}
