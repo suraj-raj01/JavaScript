@@ -1,6 +1,6 @@
 i{
     font-size: 40px;
-    margin-top: -500px;
+    margin-top: -600px;
     margin-left: 950px;
     position: absolute;
     color: firebrick;
@@ -43,4 +43,8 @@ sup{
 img{
     border: 10px solid black;
     border-radius: 10px;
+}
+p{
+    font-weight: bold;
+    font-size: 16px;
 }
