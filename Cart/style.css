@@ -1,33 +1,44 @@
 i{
     font-size: 40px;
     margin-top: -500px;
-    margin-left: 1050px;
+    margin-left: 950px;
     position: absolute;
+    color: firebrick;
 }
 button{
-    padding: 10px 40px;
-    font-size: 40px;
+    padding: 20px 40px;
+    font-size: 20px;
     font-weight: bold;
     gap: 40px;
-    background-color: black;
+    background-color: green;
     color: white;
     border-radius: 10px;
-    border: none;
+    border: 1px solid green;
+    cursor: pointer;
+    transition: .4s;
+}
+button:hover{
+    background-color: white;
+    color: green;
+    transition: .3s;
 }
 #count{
     background-color: white;
     border: 1px solid black;
-    color: black;
+    color: green;
+    padding: 20px 60px;
+    font-size: 20px;
     margin:0px 30px 0px 30px;
+    border-radius: 5px;
 }
 sup{
-    border: 1px solid;
+    border: none;
     padding: 5px 8px;
     border-radius: 50%;
     font-size: 12px;
-    border-color: black;
-    background-color: black;
-    color: white;
+    border:2px solid green;
+    background-color: green;
+    color: honeydew;
 }
 img{
     border: 10px solid black;
