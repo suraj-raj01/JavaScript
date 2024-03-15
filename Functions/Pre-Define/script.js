@@ -25,3 +25,5 @@ else{
 let u = "abcd";
 let v = "abcd";
 console.log(u.match(v) != 1);
+
+// function in function is called callback function or higher order funtion
