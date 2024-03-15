@@ -1,0 +1,10 @@
+document.write(a==b);
+// console.log(a==b);
+// document.write(b!=c);
+// console.log(b!=c);
+// document.write(a<=c);
+// console.log(a<=c);
+// document.write(b>=a);
+// console.log(b>=a);
+// document.write(b>c);
+// console.log(b>c);
