@@ -1,3 +1,4 @@
+
 let arr = [1,2,3,4,5];
 console.log("arr = ", arr);
 let arr1 = ['a','b','c','d'];
@@ -39,3 +40,4 @@ console.log("reverse array: ",num.reverse());
 let str = ['a','b','c','d'];
 console.log("Original string: ",str);
 console.log("reverse string: ",str.reverse());
+
