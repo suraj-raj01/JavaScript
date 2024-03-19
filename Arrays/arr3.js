@@ -2,7 +2,7 @@ let arr= [];
 let sum = 0;
 for(let i=0; i<10; ++i)
 { 
-    arr[i] = parseInt(prompt("Enter element"));
+    arr[i] = parseInt(prompt("Enter numbers: "));
 }
 for(let i=0; i<10; i++)
 {
