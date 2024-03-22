@@ -1,8 +1,9 @@
 // While loop is an entry loop 
 
-// Wap to print table if even and print cube if odd.
+// Wap to print table if number is even and print cube if number is odd.
 
 let a = parseInt(prompt("enter the number: "));
+// let a = 9;
 let b = 1;
 if(a%2==0)
 {
@@ -12,6 +13,6 @@ if(a%2==0)
         b++;
     }
 }
-else if(a%2 != 0){
+else{
     console.log(a*a*a);
 }
