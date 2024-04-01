@@ -5,3 +5,6 @@ console.log(a(10,20));
 
 let b = (a,b) => (a*b)
 console.log(b(20,4));
+
+let c = u => u
+console.log(20);

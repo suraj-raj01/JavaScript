@@ -44,12 +44,3 @@ console.log(g(56));
 
 let y = u => u
 console.log(43);
-
-
-
-
-
-
-
-
-
