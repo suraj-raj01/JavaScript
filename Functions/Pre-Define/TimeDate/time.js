@@ -17,3 +17,11 @@ setInterval(()=>{
     console.log(b);
 },1000);
 
+
+let x = setInterval(()=>{
+    console.log("Hello world");
+},1000);
+
+setTimeout(()=>{
+    clearInterval(x);
+},5100)
