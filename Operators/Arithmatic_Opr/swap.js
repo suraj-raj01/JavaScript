@@ -22,4 +22,4 @@ b = a-b;
 a = a-b;
 
 console.log("a = ",a,"b = ",b);
-document.write("a = ",a,"b = ",b);
+// document.write("a = ",a,"b = ",b);
