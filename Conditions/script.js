@@ -1,16 +1,16 @@
 
 // WAP to check number odd or even
-/*
-let a = parseInt(prompt("Enter the number to check odd or even: "));
-if(a % 2 == 0)
+
+let x = parseInt(prompt("Enter the number to check odd or even: "));
+if(x % 2 == 0)
 {
-    document.write(a," even number");
+    document.write(x," even number");
 }
 else{
-    document.write(a," is odd number");
+    document.write(x," is odd number");
 }
 
-*/
+document.write("<br>")
 
 //WAP to check eligible or not again check indian or not if it is indian then it can eligible for vote.
 

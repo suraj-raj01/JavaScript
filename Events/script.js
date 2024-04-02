@@ -1,7 +1,7 @@
-// function fun()
-// {
-//     alert("Alert");
-// }
+function fun()
+{
+    console.log("Mouse Events");
+}
 
 
 let an = document.getElementsByClassName('c');
