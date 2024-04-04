@@ -20,3 +20,7 @@ console.log("length : ",ar.length);
 ar1 = [1,4,6,8,5];
 let concat = ar.concat(ar1);
 console.log(concat);
+
+let ar2 = [1,2,3,4,5];
+ar2.slice(1,4);
+console.log(ar2);
