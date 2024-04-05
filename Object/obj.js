@@ -54,5 +54,3 @@ console.log(obj.account.nomnees.ParmAddress.LocalAddress);
 console.log(obj.account.nomnees.ParmAddress.LocalAddress.colony);
 
 
-
-// arr1 and arr2 merge to each other and print the sum of array element using for of loop.
