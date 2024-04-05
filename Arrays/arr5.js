@@ -1,3 +1,4 @@
+/*
 let ar = ["c++","python","php","react"];
 ar.push(1,4,5,7);  
 // push() -> it is use for add data at the last in an arry.
@@ -54,3 +55,11 @@ let join = document.getElementById('join');
 let str = ["apple","mango","banana","guava"];
 join.innerHTML = str.join("*");
 console.log(str);
+
+*/
+
+// spread Operator -> it is used to merge data.
+let array1 = ["c++","java","html","css","javascript"];
+let array2 = [1,2,3,...array1];
+console.log(array2);
+
