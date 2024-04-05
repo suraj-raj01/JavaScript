@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        body{
+            background-color: deepskyblue;
+        }
+        #box1{
+            margin:200px auto;
+            height: 300px;
+            width: 350px;
+            border: 0px solid;
+            padding: 10px 30px;
+            background-color: deepskyblue;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px;
+        }
+        #box1 p{
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+        #box1 input{
+            padding: 10px;
+            width: 90%;
+            border-radius: 5px;
+            border: 0px solid;
+            outline: none;
+            font-weight: bold;
+        }
+        #box1 button{
+            padding: 5px 35px;
+            border: 0px solid;
+            background-color: whitesmoke;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
+        }
+        #box1 button:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box1">
+    <p>Enter firs number</p>
+    <input type="number" id="num1">
+    <p>Enter second number</p>
+    <input type="number" id="num2">
+
+    <h2 id="ans">0</h2>
+
+    <button id="add" onclick="add(); return false">+</button>
+    <button id="sub" onclick="sub(); return false">-</button>
+    <button id="mul" onclick="mul(); return false">*</button>
+    <button id="div" onclick="div(); return false">/</button>
+    </div>
+    <script src="calculate.js"></script>
+</body>
+</html>
