@@ -25,3 +25,11 @@ for(let val in k)
 {
     console.log(k[val]);
 }
+
+let x = Object.values(ob);
+console.log(x);
+
+for(let v in ob)
+{
+    console.log(v);
+}
