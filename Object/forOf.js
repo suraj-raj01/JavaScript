@@ -9,3 +9,4 @@ for(let val of arr2)
     sum += val;
 }
 console.log("sum is : ",sum);
+console.log(arr2);
