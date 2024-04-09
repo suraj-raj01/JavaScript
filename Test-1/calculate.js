@@ -24,5 +24,13 @@ function div()
     let a = parseInt(document.getElementById('num1').value);
     let b = parseInt(document.getElementById('num2').value);
     let ans = document.getElementById('ans');
-  ans.innerHTML = a/b;
+  ans.innerHTML = (a/b);
+}
+
+function clr()
+{
+  let a = parseInt(document.getElementById('num1').value);
+  let b = parseInt(document.getElementById('num2').value);
+  let ans = document.getElementById('ans');
+ans.innerHTML = a*b*0;
 }

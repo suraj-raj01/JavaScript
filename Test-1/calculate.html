@@ -10,7 +10,7 @@
         }
         #box1{
             margin:200px auto;
-            height: 300px;
+            height: 340px;
             width: 350px;
             border: 0px solid;
             padding: 10px 30px;
@@ -47,14 +47,24 @@
             background-color: black;
             color: white;
         }
+        #box1 #clr{
+            width: 95%;
+            font-size: 16px;
+            padding: 10px;
+            background-color: #ffffffe8;
+        }
+        #box1 #clr:hover{
+            background-color: black;
+            color: white;
+        }
     </style>
 </head>
 <body>
 
     <div id="box1">
-    <p>Enter firs number</p>
+    <label for="num1"><p>Enter firs number</p></label>
     <input type="number" id="num1">
-    <p>Enter second number</p>
+    <label for="num2"><p>Enter second number</p></label>
     <input type="number" id="num2">
 
     <h2 id="ans">0</h2>
@@ -63,6 +73,8 @@
     <button id="sub" onclick="sub(); return false">-</button>
     <button id="mul" onclick="mul(); return false">*</button>
     <button id="div" onclick="div(); return false">/</button>
+    <br><br>
+    <button id="clr" onclick="clr(); return false">CLR</button>
     </div>
     <script src="calculate.js"></script>
 </body>
