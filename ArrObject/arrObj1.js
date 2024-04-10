@@ -61,6 +61,9 @@ let student = [
     }
 ]
 
+let StudentName = document.getElementById('s_name');
+let StudentAge = document.getElementById('s_age');
+
 function fun()
 {
     student.forEach((i)=> console.log(i.Sname));

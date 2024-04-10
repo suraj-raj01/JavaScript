@@ -61,7 +61,7 @@ else{
 
 
 let obj={
-even:function even()
+even:function()
 {
     let x = parseInt(prompt("Enter the number: "));
     if(x%2==0)
@@ -77,7 +77,7 @@ even:function even()
 },
 
 
-ptr:function ptr()
+ptr:function()
 {
     let pt = parseInt(prompt("Enter the number of row: "));
     for(let i=0; i<=pt; i++)
@@ -90,5 +90,14 @@ ptr:function ptr()
     }
 }
 }
-console.log(obj.even());
-console.log(obj.ptr());
+
+
+function even()
+{
+    console.log(obj.even());
+}
+
+function ptr()
+{
+    console.log(obj.ptr());
+}
