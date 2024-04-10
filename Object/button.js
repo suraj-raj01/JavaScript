@@ -1,35 +1,31 @@
-
-let obj={
-even:function()
+/*
+function even()
 {
     let x = parseInt(prompt("Enter the number: "));
     if(x%2==0)
     {
         document.getElementById('result').innerHTML = "Even Number";
     }
-    else{
+    else
+    {
         document.getElementById('result').innerHTML = "Odd Number";
     }
 }
 
-// ptr:function()
-// {
-//     let pt = parseInt(prompt("Enter the number of row: "));
-//     for(let i=0; i<=pt; i++)
-//     {
-//         for(let j=0; j<=i-1; j++)
-//         {
-//             document.write("*");
-//         }
-//         document.write("<br>");
-//     }
-// }
-}
 
-for(let val of obj)
+function ptr()
 {
-    console.log(val);
+    let pt = parseInt(prompt("Enter the number of row: "));
+    for(let i=0; i<=pt; i++)
+    {
+        for(let j=0; j<=i-1; j++)
+        {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
 }
+*/
 
 /*
 let obj = {
@@ -62,3 +58,37 @@ else{
     console.log("please enter 4 digit number");
 }
 */
+
+
+let obj={
+even:function even()
+{
+    let x = parseInt(prompt("Enter the number: "));
+    if(x%2==0)
+    {
+        document.getElementById('result').innerHTML = "Even Number";
+        console.log("Even number");
+    }
+    else
+    {
+        document.getElementById('result').innerHTML = "Odd Number";
+        console.log("Odd Number");
+    }
+},
+
+
+ptr:function ptr()
+{
+    let pt = parseInt(prompt("Enter the number of row: "));
+    for(let i=0; i<=pt; i++)
+    {
+        for(let j=0; j<=i-1; j++)
+        {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+}
+}
+console.log(obj.even());
+console.log(obj.ptr());

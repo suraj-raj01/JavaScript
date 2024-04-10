@@ -1,6 +1,6 @@
 // Object -> object is like a data type
 // it is use in the form of key and value pair
-//key-> name : value-> "suraj"
+// key-> name : value-> "suraj"
 
 let ob = {
     names : "SURAJ",
