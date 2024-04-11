@@ -11,18 +11,31 @@ function valid()
         prompt("please enter name: ");
         return false;
     }
-    else if(contact.lenhth<10 && contact.lenhth>10)
+    else if(contact.lenhth<10 || contact.lenhth>10)
     {
-        alert("please enter contact number");
+        alert("please enter contact number in 10 digit");
+        document.getElementById('contact').focus();
+        return false;
     }
     else if(isNaN(contact)){
         alert = "please enter value";
+        document.getElementById('contact').focus();
         return false;
     }
     else if(pass=="")
     {
         alert("enter the number ");
-        pass.document.getElementById('pass').focus;
+        pass.document.getElementById('pass').focus();
         return false;
+    }
+    else if(conf_pass=="")
+    {
+        alert("enter the number ");
+        pass.document.getElementById('conf_pass').focus();
+        return false;
+    }
+    else if(pass!=conf_pass)
+    {
+        alert("Password not matching")
     }
 }
