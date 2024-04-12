@@ -4,17 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validation</title>
+    <style>
+        form{
+            margin:150px auto;
+            height: 420px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-evenly;
+        }
+        form input{
+            padding: 10px 10px;
+            width: 100%;
+            outline: none;
+        }
+        form p{
+           font-weight: bold;
+           font-size: 16px;
+        }
+        form #submit{
+            width: 107%;
+            background-color: green;
+            border: none;
+            margin-top: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+
 </head>
 <body>
     <form action="" onsubmit="return valid();">
      <p>Enter your name: </p>
-     <input type="text" id=" names">
+     <input type="text" id="name">
      <p>Contact Number</p>
      <input type="number" id="contact">
      <p>password</p>
-     <input type="number" id="pass">
+     <input type="text" id="pass">
      <p>Conf_pass</p>
-     <input type="number" id="conf_pass">
+     <input type="text" id="conf_pass">
      <input type="submit" id="submit">
     </form>
     <script src="validation.js"></script>
