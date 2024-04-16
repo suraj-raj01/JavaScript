@@ -23,7 +23,7 @@ let name1 = "SURAJ";
 console.log(name1[3]);
 console.log(name1.charAt(3));
 
-// upercase
+// upercase 
 console.log("to upper case");
 let na = "suraj";
 console.log(na);
