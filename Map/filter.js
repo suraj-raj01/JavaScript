@@ -20,5 +20,5 @@ let employee = [
     },
     ];
 
-    let fltr = employee.filter((t)=>{ return t.age>23 && t.age<25});
+    let fltr = employee.filter((t)=>{ return (t.age>23 && t.age<25)});
     console.log(fltr);

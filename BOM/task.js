@@ -8,5 +8,5 @@ function google()
 }
 function LinkedIn()
 {
-    window.open("https://www.linkedin.com/in/suraj-kumar-1965b0296/","width = 500px,height=500px","_blank");
+    window.open("https://www.linkedin.com/in/suraj-kumar-1965b0296/","width = 500px,height=500px ,left=300px","_blank");
 }
