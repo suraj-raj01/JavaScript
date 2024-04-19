@@ -1,0 +1,24 @@
+{
+    "student":[
+        {
+            "id":1,
+            "name":"suraj",
+            "city":"bhopal"
+        },
+        {
+            "id":2,
+            "name":"rajan",
+            "city":"bihar"
+        },
+        {
+            "id":3,
+            "name":"sushil",
+            "city":"Mandideep"
+        },
+        {
+            "id":3,
+            "name":"Devansh",
+            "city":"Bhopal"
+        }
+    ]
+}
