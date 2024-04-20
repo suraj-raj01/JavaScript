@@ -26,6 +26,6 @@ student.forEach((i)=> console.log(i));
 //Print keys
 student.forEach((i)=> console.log(i.Sname));
 //Print Values
-student.forEach((i)=> console.log(Object.values(i)));
+student.forEach((i)=> console.log());
 
 
