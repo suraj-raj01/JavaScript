@@ -12,7 +12,12 @@ let student = [
     {
     Sname:"Devansh",
     sroll:103,
-    sage:22
+    sage:22,
+    addresss:{
+        city:"bhopal",
+        ps:"bpl",
+        dist:"bpl"
+    }
     }
 ]
 console.log("Before using push()");
