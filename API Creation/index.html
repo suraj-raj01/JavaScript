@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: yellow;
+        }
+        div{
+            margin: auto;
+            height: 300px;
+            width: 500px;
+        }
+        div p{
+            font-weight: bold;
+            font-size: 18px;
+        }
         button{
             padding: 10px 25px;
             border-radius: 5px;
@@ -26,7 +38,14 @@
 </head>
 <body>
     <center><h1>API Fetching</h1></center>
-    <center><button type="button" onclick="btn();">Fetch</button></center>
-    <script src="script.js"></script>
+    <center><button type="button" onclick="fet();">Fetch</button></center>
+    <div>
+        <p id="screen"></p>
+    </div>
+    <div>
+        <p id="screen1"></p>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script src="fetch.js"></script>
 </body>
 </html>

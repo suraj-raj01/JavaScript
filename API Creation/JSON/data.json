@@ -1,0 +1,28 @@
+{
+    "emp":[
+        {
+            "id":1,
+            "age":21,
+            "name":"suraj",
+            "city":"bhopal"
+        },
+        {
+            "id":2,
+            "age":22,
+            "name":"rajan",
+            "city":"bihar"
+        },
+        {
+            "id":3,
+            "age":23,
+            "name":"sushil",
+            "city":"Mandideep"
+        },
+        {
+            "id":3,
+            "age":25,
+            "name":"Devansh",
+            "city":"Bhopal"
+        }
+    ]
+}
