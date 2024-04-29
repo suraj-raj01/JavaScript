@@ -16,7 +16,7 @@ console.log(str2);
 
 let str3 = `hello welcome
 to the "cybrom" ${str}`;
-  console.log(str3);
+console.log(str3);
 
 // charAt()
 let name1 = "SURAJ";
@@ -39,8 +39,8 @@ console.log(name2.toLowerCase());
 console.log("Replace Function()");
 let name3 = "QASIM sir hame apse padhna hai";
 let u = "deepak sir se";
-console.log(name3.replace(name3,u));
-console.log(name3.replace("apse",u));
+console.log(name3.replace(name3, u));
+console.log(name3.replace("apse", u));
 
 // Repeat Function():-
 let a = "mujhe apse nhi padhna hai\n";

@@ -55,15 +55,12 @@ console.log(mul);
 */
 
 let arr1 = [];
-for(let i=0; i<10; i++)
-{
+for (let i = 0; i < 10; i++) {
     arr1[i] = parseInt(prompt("Enter the number: "));
 }
-for(let i=0; i<10; ++i)
-{
-    if(arr1[i]%2==0)
-    {
-        console.log(arr1[i]*arr1[i]);
+for (let i = 0; i < 10; ++i) {
+    if (arr1[i] % 2 == 0) {
+        console.log(arr1[i] * arr1[i]);
     }
 }
 

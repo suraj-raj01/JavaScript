@@ -59,6 +59,6 @@ console.log(str);
 */
 
 // spread Operator -> it is used to merge data.
-let array1 = ["c++","java","html","css","javascript"];
-let array2 = [1,2,3,...array1];
+let array1 = ["c++", "java", "html", "css", "javascript"];
+let array2 = [1, 2, 3, ...array1];
 console.log(array2);
