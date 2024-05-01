@@ -19,9 +19,8 @@
 
 // WAP to find Area of circle using function with argument with value take input by user
 let a = parseInt(prompt("enter the area: "));
-function area(a)
-{
-    return 3.14*a*a;
+function area(a) {
+    return 3.14 * a * a;
 }
 let x = area(a);
 console.log(x);
