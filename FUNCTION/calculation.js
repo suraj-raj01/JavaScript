@@ -1,8 +1,6 @@
-function calculate()
-{
+function calculate() {
     let a = parseInt(prompt("enter the number: \n1 -> add\n2 -> sub\n3 ->mul\n4 ->div"));
-    switch(a)
-    {
+    switch (a) {
         case 1:
             add();
             break;
@@ -19,29 +17,25 @@ function calculate()
             console.log("please enter valid!!!");
     }
 
-    function add()
-    {
+    function add() {
         let x = parseInt(prompt("Enter the first number: "));
         let y = parseInt(prompt("Enter the second number: "));
-        console.log(x+y);
+        console.log(x + y);
     }
-    function sub()
-    {
+    function sub() {
         let x = parseInt(prompt("Enter the first number: "));
         let y = parseInt(prompt("Enter the second number: "));
-        console.log(x-y);
+        console.log(x - y);
     }
-    function mul()
-    {
+    function mul() {
         let x = parseInt(prompt("Enter the first number: "));
         let y = parseInt(prompt("Enter the second number: "));
-        console.log(x*y);
+        console.log(x * y);
     }
-    function div()
-    {
+    function div() {
         let x = parseInt(prompt("Enter the first number: "));
         let y = parseInt(prompt("Enter the second number: "));
-        console.log(x/y);
+        console.log(x / y);
     }
 }
 calculate();
