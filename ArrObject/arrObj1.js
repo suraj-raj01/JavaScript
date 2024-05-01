@@ -64,14 +64,12 @@ let student = [
 let StudentName = document.getElementById('s_name');
 let StudentAge = document.getElementById('s_age');
 
-function fun()
-{
-    student.forEach((i)=> console.log(i.Sname));
+function fun() {
+    student.forEach((i) => console.log(i.Sname));
 }
 
-function fun1()
-{
+function fun1() {
     // student.forEach((i)=> console.log(i.sage));
-    let fltr = student.filter((t)=>{return t.sage>20 && t.sage<30});
+    let fltr = student.filter((t) => { return t.sage > 20 && t.sage < 30 });
     console.log(fltr);
 }
