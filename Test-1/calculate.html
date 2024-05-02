@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
     <style>
-        body{
+        body {
             background-color: deepskyblue;
         }
-        #box1{
-            margin:200px auto;
+
+        #box1 {
+            margin: 200px auto;
             height: 340px;
             width: 350px;
             border: 0px solid;
@@ -18,12 +20,14 @@
             border-radius: 10px;
             box-shadow: 0px 0px 10px;
         }
-        #box1 p{
+
+        #box1 p {
             font-weight: bold;
             font-size: 16px;
             letter-spacing: 1px;
         }
-        #box1 input{
+
+        #box1 input {
             padding: 10px;
             width: 90%;
             border-radius: 5px;
@@ -31,7 +35,8 @@
             outline: none;
             font-weight: bold;
         }
-        #box1 button{
+
+        #box1 button {
             padding: 5px 35px;
             border: 0px solid;
             background-color: whitesmoke;
@@ -43,39 +48,48 @@
             font-size: 25px;
             text-align: center;
         }
-        #box1 button:hover{
+
+        #box1 button:hover {
             background-color: black;
             color: white;
         }
-        #box1 #clr{
+
+        #box1 #clr {
             width: 95%;
             font-size: 16px;
             padding: 10px;
             background-color: #ffffffe8;
         }
-        #box1 #clr:hover{
+
+        #box1 #clr:hover {
             background-color: black;
             color: white;
         }
     </style>
 </head>
+
 <body>
 
     <div id="box1">
-    <label for="num1"><p>Enter firs number</p></label>
-    <input type="number" id="num1">
-    <label for="num2"><p>Enter second number</p></label>
-    <input type="number" id="num2">
+        <label for="num1">
+            <p>Enter firs number</p>
+        </label>
+        <input type="number" id="num1">
+        <label for="num2">
+            <p>Enter second number</p>
+        </label>
+        <input type="number" id="num2">
 
-    <h2 id="ans">0</h2>
+        <h2 id="ans">0</h2>
 
-    <button id="add" onclick="add(); return false">+</button>
-    <button id="sub" onclick="sub(); return false">-</button>
-    <button id="mul" onclick="mul(); return false">*</button>
-    <button id="div" onclick="div(); return false">/</button>
-    <br><br>
-    <button id="clr" onclick="clr(); return false">CLR</button>
+        <button id="add" onclick="add(); return false">+</button>
+        <button id="sub" onclick="sub(); return false">-</button>
+        <button id="mul" onclick="mul(); return false">*</button>
+        <button id="div" onclick="div(); return false">/</button>
+        <br><br>
+        <button id="clr" onclick="clr(); return false">CLR</button>
     </div>
     <script src="calculate.js"></script>
 </body>
+
 </html>
