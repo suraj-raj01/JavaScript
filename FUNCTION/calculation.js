@@ -1,4 +1,4 @@
-let ans = document.getElementById('res');
+
 function calculate() {
     let a = parseInt(prompt("enter the number: \n1 -> add\n2 -> sub\n3 ->mul\n4 ->div"));
     switch (a) {
@@ -23,7 +23,7 @@ function calculate() {
         let x = parseInt(prompt("Enter the first number: "));
         let y = parseInt(prompt("Enter the second number: "));
         console.log(x + y);
-        document.write(x+y);
+        document.write(x + y);
     }
     function sub() {
         let x = parseInt(prompt("Enter the first number: "));
@@ -41,4 +41,3 @@ function calculate() {
         console.log(x / y);
     }
 }
-calculate();
