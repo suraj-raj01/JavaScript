@@ -28,12 +28,12 @@ img.style.margin = 'auto'
 img.style.padding = '10px';
 
 
-// getElementByClassName
+// getElementByClassName : returns node [return value in array formats].
 let p = document.getElementsByClassName("p1");
 console.log(p[0]);
 console.log(p[1]);
 
-//getElementByTagName
+//getElementByTagName : returns node [return value in array formats].
 let tag = document.getElementsByTagName('span');
 console.log(tag[0]);
 
@@ -42,9 +42,26 @@ document.body.style.backgroundColor = 'orangered';
 
 let x = document.getElementsByTagName('li');
 for (let i = 0; i < 8; i++) {
-    if (x[i] % 2 != 0) {
+    if (i % 2 == 0) {
         x[i].style.backgroundColor = 'black';
         x[i].style.fontWeight = 'bold';
         x[i].style.color = 'white';
     }
 }
+
+// createElement : it is use for create element(tag).
+let el = document.createElement("h1");
+console.log(el);
+
+// createTextNode : it use for create text on html page.
+let text = document.createTextNode("Hello");
+console.log(text);
+
+// appendChild : it is use for add text in element
+el.appendChild(text);
+console.log(el)
+// document.write(el);
+
+let s = document.getElementById('main');
+s.appendChild(el);
+
