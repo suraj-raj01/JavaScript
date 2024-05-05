@@ -16,3 +16,11 @@ para.appendChild(P);
 para.style.backgroundColor='aqua'
 para.style.fontWeight='bold';
 para.style.textTransform = 'capitalize'
+
+
+let s1 = document.createElement('span')
+let s2 = document.createTextNode("This is The Span Tag!!")
+s1.appendChild(s2);
+console.log(s1);
+let s3 = document.getElementById('hero')
+s3.appendChild(s1);
