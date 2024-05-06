@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        center{
+            font-weight: bold;
+            font-size: 20px;
+            background-color: orangered;
+            padding: 10px;
+            margin: 10px 0px;
+        }
+        button{
+            width: 100%;
+            padding: 10px 20px;
+            background-color: green;
+            border: none;
+            color: white;
+            font-weight: bold;
+        }
+        h1{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <center>EVENTS</center>
+    <button type="button" onclick="onclk();">Onclick</button>
+    <br><br>
+    <button type="button" onclick="input();"> Click </button>
+    <br>
+    <h1 id="res">0</h1>
+    
+    <!-- ondblclick: click two times for working -->
+    <button type="button" ondblclick="ondbl();"> OndblClick </button>
+    <br>
+    <h1 id="res1">0</h1>
+    <script src="event.js"></script>
+</body>
+</html>
