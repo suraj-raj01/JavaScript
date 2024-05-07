@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid;
+            padding: 5px;
+            cursor: pointer;
+            background-color: black;
+        }
+        h1{
+            background-color: white;
+        }
+        #main p{
+            display: none;
+            color: white;
+        }
+        button{
+            padding: 12px 25px;
+            background-color: green;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main" onclick="clk();">
+        <h1>Click Here</h1>
+      <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia at deleniti quis voluptates quas, ut beatae illum cum minus nemo deserunt ex itaque modi corporis totam dolores tempora libero impedit ipsa temporibus a! Delectus magnam dolorum, eos totam eius, adipisci praesentium distinctio modi inventore ipsum temporibus quae iusto mollitia quasi!</p>
+    </div>
+
+    <h1 id="res">0</h1>
+    <button type="button" onclick="inc();">INC</button>
+    <button type="button" onclick="dec();">DEC</button>
+    <button type="button" onclick="reset();">RESET</button>
+    <script src="script.js"></script>
+</body>
+</html>
