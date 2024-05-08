@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
+        div {
             border: 1px solid;
             padding: 5px;
             cursor: pointer;
-            background-color: black;
+            background-color: teal;
         }
-        h1{
+
+        h1 {
             background-color: white;
         }
-        #main p{
+
+        #main p {
             display: none;
             color: white;
         }
-        button{
+
+        button {
             padding: 12px 25px;
-            background-color: green;
+            background-color: teal;
             color: white;
             border: none;
             font-weight: bold;
@@ -28,18 +32,43 @@
             border-radius: 5px;
         }
 
+        .demo {
+            background-color: yellow;
+            color: black;
+        }
     </style>
 </head>
+
 <body>
     <div id="main" onclick="clk();">
         <h1>Click Here</h1>
-      <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia at deleniti quis voluptates quas, ut beatae illum cum minus nemo deserunt ex itaque modi corporis totam dolores tempora libero impedit ipsa temporibus a! Delectus magnam dolorum, eos totam eius, adipisci praesentium distinctio modi inventore ipsum temporibus quae iusto mollitia quasi!</p>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia at deleniti quis voluptates
+            quas, ut beatae illum cum minus nemo deserunt ex itaque modi corporis totam dolores tempora libero impedit
+            ipsa temporibus a! Delectus magnam dolorum, eos totam eius, adipisci praesentium distinctio modi inventore
+            ipsum temporibus quae iusto mollitia quasi!</p>
     </div>
-
+    <!-- Increament Decreament and Reset -->
     <h1 id="res">0</h1>
     <button type="button" onclick="inc();">INC</button>
     <button type="button" onclick="dec();">DEC</button>
     <button type="button" onclick="reset();">RESET</button>
+    <br><br>
+
+    <!-- ClassList -->
+    <div id="hero" onclick="fun();">
+        <h1>Click Here</h1>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia at deleniti quis voluptates
+            quas, ut beatae illum cum minus nemo deserunt ex itaque modi corporis totam dolores tempora libero impedit
+            ipsa temporibus a! Delectus magnam dolorum, eos totam eius, adipisci praesentium distinctio modi inventore
+            ipsum temporibus quae iusto mollitia quasi!</p>
+    </div>
+    <br>
+    <br>
+    <button type="button" onclick="fun();">Add Here</button>
+    <button type="button" onclick="fun1();">Remove Here</button>
+    <button type="button" onclick="fun2();">Add & Remove</button>
+
     <script src="script.js"></script>
 </body>
+
 </html>

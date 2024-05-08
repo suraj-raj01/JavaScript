@@ -19,3 +19,21 @@ function reset() {
     a = 0;
     document.getElementById('res').innerHTML = a;
 }
+
+// classList function
+
+let di = document.getElementById('hero');
+function fun()
+{
+   di.classList.add('demo')
+}
+
+function fun1()
+{
+    di.classList.remove('demo');
+}
+// Toggle Function
+function fun2()
+{
+    di.classList.toggle('demo');
+}
