@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 20px;
+            background-color: dodgerblue;
+        }
+        #img{
+            margin: 100px 0;
+            height: 60vh;
+            width: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            font-size: 30px;
+            gap: 20px;
+            border-radius: 20px;
+        }
+        div{
+            margin: 100px 0;
+            height: 60vh;
+            width: 20vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            gap: 20px;
+            border-radius: 20px;
+        }
+        div a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            width: 100%;
+            padding: 5px 10px;
+        }
+        div a:hover{
+            background-color: black;
+            color: white;
+        }
+        #img img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            border-radius: 20px;
+        }
+        #img p{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <a href="" onmouseenter="mobile();">Mobile</a>
+        <a href="" onmouseenter="tablet();">Tablet</a>
+        <a href="" onmouseenter="chair();">Chair</a>
+        <a href="" onmouseenter="laptop();">Laptop</a>
+    </div>
+    <div id="img">
+        <img src="./Eagle.jpg" alt="" id="photo">
+    </div>
+    <script>
+     let im = document.getElementById('photo');
+     function mobile()
+     {
+        im.src = "https://www.pngmart.com/files/15/Apple-iPhone-12-PNG-Picture.png";
+     }
+
+     function tablet()
+     {
+        im.src = "https://p3-ofp.static.pub/fes/cms/2023/02/22/5rhddw9d8vm9xfkexcwzvvi9lindg8985574.png"
+     }
+
+     function chair()
+     {
+        im.src = "https://www.pngmart.com/files/21/Accent-Chair-PNG-Photos.png"
+     }
+
+     function laptop()
+     {
+        im.src = "https://www.transparentpng.com/download/laptop/9oRuDc-refreshed-pavilion-gaming-series-launching-next-month.png"
+     }
+    </script>
+</body>
+</html>
