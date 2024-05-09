@@ -6,44 +6,88 @@
     <title>Navbar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        body{
+            background-color: cornflowerblue;
+        }
         ul{
+            margin: 0px;
             list-style-type: none;
             display: flex;
-            gap: 100px;
-        }
-        #navbar{
-            height: 13vh;
-            width: 100%;
-            background-color: teal;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            font-weight: bold;
-            color: white;
-        }
-        .res{
-            height: 50vh;
-            width: 20vh;
-            display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: red;
+            font-weight: bold;
+            font-size: 18px;
+            height: 12vh;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+        }
+        ul li{
+            cursor: pointer;
+            margin: 0px;
+            padding: 10px 45px;
+            transition: .5s;
+        }
+        ul li:hover{
+            padding: 10px 45px;
+            transition: .5s;
+            background-color: orange;
+        }
+        .res{
+            position: absolute;
+            top: 0px;
+            background-color: black;
+            height: 97vh;
+            width: 30vh;
+            gap: 10px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .res li{
+            border: 1px solid transparent;
+            width: 45%;
+            transition: .5s;
+        }
+        .res li:hover{
+            transition: 0.5s;
+            background-color: orange;
+        }
+        .dark{
+            background-color: black;
+            #navbar{
+                background-color: cornflowerblue;
+                color: black;
+            }
+            div{
+                color: white;
+            }
+        }
+        div{
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 100px;
+            text-shadow: 5px 5px 15px;
         }
     </style>
 </head>
 <body>
 
-    <div id="navbar">
-        <ul>
-            <li style="font-size: 20px;">LOGO</li>
-            <li>Home</li>
-            <li>Contact</li>
-            <li>Services</li>
-            <li>About</li>
-            <li onclick="fun();" style="font-size: 20px; "><i class="fa-solid fa-bars"></i></li>
-        </ul>
-    </div>
+<ul id="navbar">
+    <li>Home</li>
+    <li>Contact</li>
+    <li>Services</li>
+    <li>About</li>
+    <li onclick="mode();"><i class="fa-solid fa-circle-half-stroke"></i></li>
+    <li onclick="fun();"><i class="fa-solid fa-bars"></i></li>
+</ul>
+<div>
+    <p>JavaScript</p>
+</div>
     <script src="nav.js"></script>
 </body>
 </html>
