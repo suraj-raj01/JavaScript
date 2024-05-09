@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onmouse</title>
+    <style>
+        button {
+            padding: 10px 30px;
+            border: none;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+        }
+        div {
+            border: 1px solid;
+            padding: 5px;
+            cursor: pointer;
+            background-color: teal;
+            color: white;
+        }
+
+        h1 {
+            background-color: white;
+            color: black;
+        }
+
+        p {
+            display: none;
+        }
+        #img{
+            height: 400px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image:url('./Eagle.jpg') ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #p{
+            display: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" onmouseenter="fun();">enter</button><br><br>
+    <button type="button" onmouseleave="fun1();">leave</button><br><br>
+    <div id="main" onmouseenter="clk();" onmouseleave="clk1();">
+        <h1>Click Here</h1>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia at deleniti quis voluptates
+            quas, ut beatae illum cum minus nemo deserunt ex itaque modi corporis totam dolores tempora libero impedit
+            ipsa temporibus a! Delectus magnam dolorum, eos totam eius, adipisci praesentium distinctio modi inventore
+            ipsum temporibus quae iusto mollitia quasi!</p>
+    </div><br>
+    <div id="img" onmouseenter="show();" onmouseleave="hide();">
+                <p id="p">Eagle</p>
+    </div>
+    <script>
+        function fun() {
+            alert("on mouse enter!!")
+        }
+        function fun1() {
+            alert("on mouse leave!!")
+        }
+        let p = document.getElementById('para');
+        function clk() {
+            p.style.display = "block";
+        }
+        function clk1() {
+            p.style.display = "none";
+        }
+        let sh = document.getElementById('p');
+        function show()
+        {
+            sh.style.display = 'block';
+            sh.style.zIndex = '2';
+        }
+        function hide()
+        {
+            sh.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
