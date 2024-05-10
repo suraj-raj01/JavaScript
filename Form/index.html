@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: steelblue;
+        }
+        form{
+            margin: 200px auto;
+            height: 300px;
+            width: 300px;
+            box-shadow: 0px 0px 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form input{
+            width: 277px;
+            padding: 10px 0px;
+            border: 2px solid transparent;
+            outline: none;
+            border-bottom-color: black;
+            background-color: steelblue;
+        }
+        form input::placeholder{
+            color: black;
+        }
+        form #submit{
+            background-color: green;
+            padding: 12px 20px;
+            color: white;
+            font-weight: bold;
+            border: none;
+            width: 300px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="" onsubmit="valid(); return false">
+        <input type="number" id="val1" placeholder="enter a number"><br><br>
+        <input type="number" id="val2" placeholder="enter a number"><br><br>
+        <input type="submit" id="submit">
+        <h1 id="res">0</h1>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>
