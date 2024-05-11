@@ -1,0 +1,92 @@
+<!-- WAP to find area of circle -->
+<!-- WAP to find Simple Interest -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>AREA OF CIRCLE</h1>
+    <form action="" onsubmit="area(); return false">
+            <input type="number" id="a" placeholder="enter area"><br><br>
+            <input type="submit">
+    </form>
+    <h1 id="res">0</h1>
+
+    <h1>SIMPLE INTEREST</h1>
+    <form action="" onsubmit="si(); return false">
+        <input type="number" id="amount" placeholder="enter amount"><br><br>
+        <input type="number" id="month" placeholder="enter month"><br><br>
+        <input type="number" id="interest" placeholder="enter interest"><br><br>
+        <input type="submit" id="submit">
+    </form>
+    <h1 id="answer">0</h1>
+
+    <h1>SWAP</h1>
+    <form action="" onsubmit="swap(); return false">
+        <input type="number" id="n1" placeholder="enter value1"><br><br>
+        <input type="number" id="n2" placeholder="enter value2"><br><br>
+        <input type="submit">
+    </form>
+    <h1 id="ans1">0</h1>
+    <h1 id="ans2">0</h1>
+
+    <!-- odd or even -->
+
+    <h1>CHECK ODD OR EVEN</h1>
+    <form action="" onsubmit="odd(); return false">
+        <input type="number" id="num1">
+        <input type="submit">
+    </form>
+    <h1 id="odd">0</h1>
+    <script>
+        // area of circle
+        function area()
+        {
+            let area = parseInt(document.getElementById('a').value);
+            let ans = document.getElementById('res')
+            ans.innerHTML = 3.14*area*area;
+        }
+
+        // simple interest
+        function si()
+        {
+            let m = parseInt(document.getElementById('amount').value);
+            let am = parseInt(document.getElementById('month').value);
+            let int = parseInt(document.getElementById('interest').value);
+            let ans = document.getElementById('answer');
+            ans.innerHTML = m*am*int;
+        }
+
+        // swap
+        function swap()
+        {
+            let n1 =parseInt(document.getElementById('n1').value);
+            let n2 = parseInt(document.getElementById('n2').value);
+            let ans1 = document.getElementById('ans1');
+            let ans2  =document.getElementById('ans2');
+            ans1.innerHTML = "Before Swap : "+n1+" "+n2;
+            let temp = n1;
+            n1 = n2;
+            n2 = temp;
+            ans2.innerHTML = "After Swap : "+n1 +" "+n2;
+        }
+
+        // odd or ever
+        function odd(){
+            let num1 = parseInt(document.getElementById('num1').value);
+            let ans1 = document.getElementById('odd');
+            if(num1%2!=0)
+            {
+                ans1.innerHTML = "ODD";
+            }
+            else{
+            ans1.innerHTML = "EVEN";
+            }
+        }
+    </script>
+</body>
+</html>
