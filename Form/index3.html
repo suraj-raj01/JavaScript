@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: teal;
+        }
+        form{
+            margin: 150px auto;
+            height: 400px;
+            display: grid;
+            grid-template-columns: auto;
+            width: 250px;
+            gap: 25px;
+            padding: 20px 50px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px white;
+        }
+        input{
+            background-color: teal;
+            border: 1px solid transparent;
+            border-bottom-color: white;
+        }
+        input::placeholder{
+            color: white;
+            font-weight: bold;
+        }
+        #submit{
+            background-color: green;
+            color: white;
+            border: 2px solid green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <form action="" onsubmit=" return valid();">
+        <input type="text" placeholder="Name" id="name">
+        <input type="number" placeholder="Age" id="age">
+        <input type="email" placeholder="Email" id="email">
+        <input type="tel" placeholder="Contact" id="contact">
+        <input type="password" placeholder="Password" id="pass">
+        <input type="password" placeholder="Conf-password" id="conf-pass">
+        <input type="submit" id="submit">
+    </form>
+
+    <script src="form2.js">
+        
+    </script>
+</body>
+</html>
