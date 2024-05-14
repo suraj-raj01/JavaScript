@@ -11,6 +11,12 @@ function valid() {
         document.getElementById('name').focus();
         return false;
     }
+    else if(!(isNaN(n)))
+        {
+            alert("number not allow!");
+            document.getElementById('name').focus();
+            return false;
+        }
     else if (age == "") {
         alert("please enter your age");
         document.getElementById('age').focus();
@@ -26,6 +32,12 @@ function valid() {
         document.getElementById('email').focus();
         return false;
     }
+    else if(!(email.include("@")))
+        {
+        alert("please enter email");
+        document.getElementById('email').focus();
+        return false;
+        }
     else if (contact == "") {
         alert("please enter contact number");
         document.getElementById('contact').focus();

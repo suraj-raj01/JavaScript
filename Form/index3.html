@@ -26,30 +26,30 @@
         input{
             background-color: transparent;
             border: 1px solid transparent;
-            border-bottom-color: orangered;
-            color: orangered;
+            border-bottom-color: ghostwhite;
+            color: ghostwhite;
             font-weight: bold;
             outline: none;
         }
         input::placeholder{
-            color: orangered;
+            color: ghostwhite;
             font-weight: bold;
         }
         input:focus{
             border: 1px solid;
         }
         #submit{
-            background-color: orangered;
-            color: white;
-            border: 1px solid orangered;
+            background-color: ghostwhite;
+            color: red;
+            border: 1px solid ghostwhite;
             border-radius: 20px;
             font-weight: bold;
             transition: .5s;
         }
         #submit:hover{
-            background-color: white;
-            color: orangered;
-            border: 1px solid orangered;
+            background-color: red;
+            color: ghostwhite;
+            border: 1px solid ghostwhite;
             cursor: pointer;
             transition: .5s;
         }
@@ -60,7 +60,7 @@
 
     <form action="" onsubmit=" return valid();">
         <input type="text" placeholder="Name" id="name">
-        <input type="number" placeholder="Age" id="age">
+        <input type="text" placeholder="Age" id="age">
         <input type="email" placeholder="Email" id="email">
         <input type="tel" placeholder="Contact" id="contact">
         <input type="password" placeholder="Password" id="pass">
