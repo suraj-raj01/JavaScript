@@ -32,12 +32,12 @@ function valid() {
         document.getElementById('email').focus();
         return false;
     }
-    else if(!(email.include("@")))
-        {
-        alert("please enter email");
-        document.getElementById('email').focus();
-        return false;
-        }
+    // else if(!(email.include("@")))
+    //     {
+    //     alert("please enter email");
+    //     document.getElementById('email').focus();
+    //     return false;
+    //     }
     else if (contact == "") {
         alert("please enter contact number");
         document.getElementById('contact').focus();
