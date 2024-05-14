@@ -47,6 +47,11 @@ function valid() {
         document.getElementById('pass').focus();
         return false;
     }
+    else if(!(pass.match(/[@,#,$,<>]/))){
+        alert("Your password is Weak!!");
+        document.getElementById('pass').focus();
+        return false;
+    }
     else if (conf_pass == "") {
         alert("Please enter conform password");
         document.getElementById("conf-pass").focus();
