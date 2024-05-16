@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Change</title>
+    <style>
+        body{
+            margin: 100px auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: teal;
+        }
+        #text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #text a{
+            padding: 10px 10px;
+            text-decoration: none;
+            color: ghostwhite;
+            width: 100%;
+        }
+        #text a:hover{
+            background-color: ghostwhite;
+            color: black;
+        }
+        #img{
+            height: 400px;
+            width: 450px;
+        }
+        #img img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div id="text">
+        <a href="" onmouseenter="mob();" id="Mobile">Mobile</a>
+        <a href="" onmouseenter="lap()" id="Laptop">Laptop</a>
+        <a href="" onmouseenter="chair()" id="Chair">Chair</a>
+        <a href="" onmouseenter="tab()" id="Tablet">Tablet</a>
+        <a href="" onmouseenter="aero();" id="Aeroplane">Aeroplane</a>
+    </div>
+    <div id="img">
+        <img src="https://imgs.search.brave.com/ypUcjBsO4QuJkrgWYJK15RabiP7XUGaSabc0FzbE_ns/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMTUvQXBw/bGUtaVBob25lLTEy/LVBORy1UcmFuc3Bh/cmVudC1QaWN0dXJl/LnBuZw" alt="" id="change" >
+    </div>
+    <script>
+        let m = document.getElementById('change');
+        function mob()
+        {
+            m.src = "https://imgs.search.brave.com/ypUcjBsO4QuJkrgWYJK15RabiP7XUGaSabc0FzbE_ns/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMTUvQXBw/bGUtaVBob25lLTEy/LVBORy1UcmFuc3Bh/cmVudC1QaWN0dXJl/LnBuZw";
+        }
+        function lap()
+        {
+            m.src = "https://imgs.search.brave.com/pEsWdsaacUI5nVLofJCpeVsB5IE78ejX7AUk2m6W4L4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL2xhcHRvcC1o/ZC1wbmctYXN1cy1s/YXB0b3AtcG5nLXRy/YW5zcGFyZW50LTY1/Ny5wbmc"
+        }
+        function chair()
+        {
+            m.src = "https://imgs.search.brave.com/8c_5GjS4uCWdPULJamLu7OviWuRCDmdmDGpYiiM2kt8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMjEvQWNj/ZW50LUNoYWlyLVBO/Ry1Jc29sYXRlZC1I/RC5wbmc"
+        }
+        function tab()
+        {
+            m.src = "https://imgs.search.brave.com/yl9vvSgA8HKVozXDshPEZild22efl04cD-vvKDo31iw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxNi8w/NS9UYWJsZXQtRnJl/ZS1QTkctSW1hZ2Uu/cG5n"
+        }
+        function aero()
+        {
+            m.src = "https://imgs.search.brave.com/o5XKpgVWV4vffU8wL5i7Lto2c2Be61I9HB_bASilc_o/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxNi8w/NS9QbGFuZS1UcmFu/c3BhcmVudC5wbmc"
+        }
+    </script>
+</body>
+</html>

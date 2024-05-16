@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            padding: 10px 5px;
+            background-color: teal;
+        }
+        #main h1{
+            background-color: black;
+            color: white;
+        }
+        #main #para{
+            display: none;
+            color: white;
+        }
+        .demo{
+            background-color: teal;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" onmouseenter="fun();" onmouseleave="leave();">
+        <center><h1>HEADING</h1></center>
+        <P id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam laboriosam, dolores sed voluptatibus odio perspiciatis eveniet maxime voluptatum expedita doloremque illum dicta nisi nobis! Repellendus cum rem enim delectus quia. Hic ad officia, voluptate magni quasi laudantium in amet inventore dolores, sunt enim nesciunt facilis ducimus aliquam labore deleniti, rem repellat atque deserunt assumenda. Sapiente repellendus ab veniam. Cum vel officia reiciendis quidem nobis deserunt obcaecati, facere tempora odit commodi exercitationem sint. Repellendus dolorum deserunt natus sed. Itaque laudantium adipisci laborum explicabo suscipit, corporis asperiores omnis totam harum amet hic!</P>
+    </div>
+
+    <div id="over" onmouseenter="over();" onmouseleave="lev();">
+        <center><h2>SURAJ KUMAR</h2></center>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, nesciunt illo. Dolorum optio natus rerum qui? Facilis laboriosam consequatur provident accusantium, quae incidunt voluptas recusandae molestias, quam quis mollitia delectus. Quam repudiandae hic aliquam molestiae placeat nam voluptatibus corrupti, totam dolor ratione inventore animi amet perspiciatis facilis quos vel quis cum expedita debitis excepturi dignissimos vitae. Perspiciatis aliquam earum accusantium?</p>
+    </div>
+    <script>
+        let m = document.getElementById('para');
+        function fun()
+        {
+            m.style.display='block';
+        }
+        function leave()
+        {
+            m.style.display='none';
+        }
+
+        let d = document.getElementById('over')
+        function over()
+        {
+            d.classList.toggle('demo');
+        }
+        // function lev()
+        // {
+        //     d.classList.remove('demo');
+        // }
+    </script>
+</body>
+</html>
