@@ -1,3 +1,4 @@
+// Arrow Function is use for code consize.
 /*
 Syntax:-
 1. () => { return value}
@@ -10,35 +11,35 @@ Syntax:-
 
 // WAP to find area of circle radius take from the user.
 
-// let r = prompt("enter the radius: ");
-// let area = fun =>{ return 3.14*r*r}
-// console.log(area(r));
-// document.getElementById('res').innerHTML="Area of circle: "+area(r);
+let r = prompt("enter the radius: ");
+let area = fun =>{ return 3.14*r*r}
+console.log(area(r));
+document.getElementById('res').innerHTML="Area of circle: "+area(r);
 
 //WAP to check number is odd or even
 
-// let val = prompt("enter the number: ");
-// let evenOdd = (val) =>{ 
-//     if(val%2==0)
-//         {
-//             return "even";
-//         }
-//         else 
-//         {
-//             return "odd";
-//         }
-//  }
-//  console.log(evenOdd(val))
+let val = prompt("enter the number: ");
+let evenOdd = (val) =>{ 
+    if(val%2==0)
+        {
+            return "even";
+        }
+        else 
+        {
+            return "odd";
+        }
+ }
+ console.log(evenOdd(val))
 
 // WAP to find the Simple Interest
 
-// let amount = prompt("Enter the amount: ");
-// let month = prompt("Enter the month: ");
-// let Interest = prompt("Enter the enterest: ");
-// let si = () =>{
-//     return (amount*month*Interest)/100;
-// }
-// console.log(si(amount,month,Interest))
+let amount = prompt("Enter the amount: ");
+let month = prompt("Enter the month: ");
+let Interest = prompt("Enter the enterest: ");
+let si = () =>{
+    return (amount*month*Interest)/100;
+}
+console.log(si(amount,month,Interest))
 
 // WAP to swap two number.
 
