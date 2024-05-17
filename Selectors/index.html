@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+</head>
+<body>
+    <h1>HEADING</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptas quia, deserunt amet, asperiores fugit blanditiis eveniet dolore omnis ducimus unde modi sint non alias. Vero necessitatibus tempora corrupti, commodi obcaecati deserunt delectus, eos natus debitis rerum, ipsa officiis illo quas sapiente reiciendis dolorum quia alias quam ut quo cumque.</p>
+    <button id="btn">Submit</button>
+
+    <ul type="none">
+        <li>Hello</li>
+        <li>Good</li>
+        <li>Evening</li>
+    </ul>
+
+    <script>
+        let head = document.querySelector('h1');
+        head.style.backgroundColor="teal";
+        head.style.color="white";
+
+        let para = document.querySelector('.para');
+        para.style.backgroundColor="gold";
+
+        let btn = document.querySelector('#btn');
+        btn.style.backgroundColor="green";
+        btn.style.padding = "12px 30px";
+        btn.style.fontWeight = "bold";
+        btn.style.color = "white";
+        btn.style.border="none";
+        btn.style.cursor="pointer";
+        // eventListener(event,function)
+        //Way-1.
+        // btn.addEventListener("click",function(){
+        //     alert("Clicked....!!!!!!!");
+        // })
+        
+        //Way-2.
+        // btn.addEventListener("click",demo);
+        // function demo()
+        // {
+        //     alert("clicked..!!!!");
+        // }
+
+        //Way-3
+        btn.addEventListener("click",()=>{alert("clicked..!!!!")})
+        
+        // ul li
+        let lis = document.querySelectorAll('li');
+        // lis[0].style.color="red";
+        for(let i=0; i<lis.length; i++)
+        {
+            if(i%2!=0)
+            {
+                lis[i].style.color="white";
+                lis[i].style.backgroundColor="teal";  
+                lis[i].style.padding="10px 0px"           
+            }
+            else{
+            lis[i].style.backgroundColor="black";
+            lis[i].style.color="white"; 
+            lis[i].style.padding="10px 0px"          
+            }
+        }
+
+    </script>
+</body>
+</html>
