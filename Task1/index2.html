@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+    <button type="button" onclick="fun();">click</button>
+    </div>
+    <script>
+        function fun()
+        {
+            let m = document.getElementById("main")
+            let a = document.createElement("button");
+            let b = document.createTextNode("Click Here")
+            a.appendChild(b);
+            console.log(a.appendChild(b))
+            m.innerHTML=m.appendChild(a)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            margin: 10px;
+            width: 30px;
+            padding: 10px 30px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul  type="non" onmouseenter="main();">
+        <li onmouseenter="fun1();" id="btn1">OFF</li>
+        <li onmouseenter="fun2();" id="btn2">OFF</li>
+        <li onmouseenter="fun3();" id="btn3">OFF</li>
+        <li onmouseenter="fun4();" id="btn4">OFF</li>
+        <li onmouseenter="fun5();" id="btn5">OFF</li>
+    </ul>
+    <script>
+        let li = document.getElementsByTagName('li');
+        function fun1()
+        {
+            l1.innerHTML="ON";
+            l1.style.backgroundColor="red";
+        }
+
+        let l2 = document.getElementById('btn2');
+        function fun2()
+        {
+            l2.innerHTML="ON";
+            l2.style.backgroundColor="green"
+        }
+
+        let l3 = document.getElementById('btn3');
+        function fun3()
+        {
+            l3.innerHTML="ON";
+            l3.style.backgroundColor="yellow";
+        }
+
+        let l4 = document.getElementById('btn4');
+        function fun4()
+        {
+            l4.innerHTML="ON";
+            l4.style.backgroundColor="teal"
+        }
+
+        let l5 = document.getElementById('btn5');
+        function fun5()
+        {
+            l5.innerHTML="ON";
+            l5.style.backgroundColor="gold"
+        }
+    </script>
+</body>
+</html>
