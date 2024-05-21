@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-1</title>
+    <style>
+        .demo1{
+            background-color: black;
+            color: white;
+        }
+        .demo2{
+            background-color: green;
+            color: white;
+        }
+        .demo3{
+            background-color: yellow;
+            color: white;
+        }
+        .demo4{
+            background-color: teal;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="btn1" onclick="btn1();">Button-1</button>
+    <button type="button" onclick="btn2();">Button-2</button>
+    <button type="button" onclick="btn3();">Button-3</button>
+    <button type="button" onclick="btn4();">Button-4</button>
+    <script>
+        function btn1(){
+            document.body.classList.toggle('demo1');
+        }
+        function btn2(){
+            document.body.classList.toggle('demo2');
+        }
+        function btn3(){
+            document.body.classList.toggle('demo3');
+        }
+        function btn4(){
+            document.body.classList.toggle('demo4');
+        }
+    </script>
+</body>
+</html>
