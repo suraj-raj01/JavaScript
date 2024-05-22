@@ -7,16 +7,21 @@
     <style>
         li{
             margin: 10px;
-            width: 30px;
+            width: 40px;
             padding: 10px 30px;
             background-color: black;
             color: white;
+            border-radius: 25px;
+            box-shadow: 0px 0px 2px;
+        }
+        body{
+            background-color: black;
         }
     </style>
 </head>
 <body>
     
-    <ul  type="non" onmouseenter="main();">
+    <ul  type="none" onmouseenter="main();">
         <li onmouseenter="fun1();" id="btn1">OFF</li>
         <li onmouseenter="fun2();" id="btn2">OFF</li>
         <li onmouseenter="fun3();" id="btn3">OFF</li>
@@ -24,7 +29,8 @@
         <li onmouseenter="fun5();" id="btn5">OFF</li>
     </ul>
     <script>
-        let li = document.getElementsByTagName('li');
+        let l1 = document.getElementById('btn1');
+    
         function fun1()
         {
             l1.innerHTML="ON";
@@ -42,7 +48,7 @@
         function fun3()
         {
             l3.innerHTML="ON";
-            l3.style.backgroundColor="yellow";
+            l3.style.backgroundColor="brown";
         }
 
         let l4 = document.getElementById('btn4');

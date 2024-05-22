@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        button {
+            background-color: green;
+            border: none;
+            padding: 15px 30px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .demo {
+            background-color: black;
+            color: white;
+
+            button {
+                background-color: white;
+                color: green;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <div id="main">
-    <button type="button" onclick="fun();">click</button>
+        <button type="button" id="btn">Click</button>
     </div>
     <script>
-        function fun()
-        {
-            let m = document.getElementById("main")
+        let b = document.getElementById("btn");
+        b.addEventListener("click", () => {
             let a = document.createElement("button");
-            let b = document.createTextNode("Click Here")
-            a.appendChild(b);
-            console.log(a.appendChild(b))
-            m.innerHTML=m.appendChild(a)
-        }
+            let txt = document.createTextNode("Mode")
+            a.appendChild(txt)
+            let m = document.getElementById("main");
+            m.appendChild(a);
+            a.addEventListener("click", () => {
+                document.body.classList.toggle("demo")
+            })
+        })
     </script>
 </body>
+
 </html>
