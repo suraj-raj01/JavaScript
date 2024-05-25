@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Question-1</title>
+    <style>
+        div img{
+            height: 500px;
+            width: 880px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1  onmouseenter="fun1();" onmouseleave="fun2()">Heading</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quod adipisci totam, explicabo tempora dolor, modi expedita consequatur hic libero quae accusantium sit aspernatur vel quidem, nisi consectetur autem quaerat?</p>
+        <img src="https://www.wallpaperbetter.com/wallpaper/598/77/84/korean-beautiful-girl-1080P-wallpaper.jpg" id="img" alt="">
+    </div>
+    <script>
+        let m = document.getElementById("main");
+        let im = document.getElementById("img")
+        function fun1()
+        {
+            im.src = "https://i.pinimg.com/originals/8c/50/81/8c5081040730e727264c04a075871574.jpg"
+        }
+        function fun2()
+        {
+            im.src = "https://www.wallpaperbetter.com/wallpaper/598/77/84/korean-beautiful-girl-1080P-wallpaper.jpg"
+        }
+    </script>
+</body>
+</html>
