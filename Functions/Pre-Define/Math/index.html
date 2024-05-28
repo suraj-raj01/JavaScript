@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    <style>
+        body{
+            background-color: #0c0202;
+        }
+        button{
+            background-color: lightskyblue;
+            border: none;
+            padding: 15px 30px;
+            font-weight: bold;
+            color: black;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        h1{
+            background-color: lightskyblue;
+            color: black;
+            padding: 20px 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Math Pre-Define Function</h1>
+    <!-- <script src="script1.js"></script> -->
+    <h1 id="res1">0</h1>
+    <h1 id="res2">0</h1>
+    <button onclick="fun();">Click</button>
+    <h1 id="res3">0</h1>
+    <script>
+        function fun()
+        {
+            let res1 = document.getElementById('res1');
+            let res2 = document.getElementById('res2');
+            let res3 = document.getElementById('res3');
+            let a = Math.random()*10+1;
+            let b = Math.random()*10+1;
+            res1.innerHTML=Math.trunc(a);
+            res2.innerHTML=Math.trunc(b);
+            console.log(Math.trunc(a))
+            console.log(Math.trunc(b))
+            res3.innerHTML = Math.trunc(a+b)
+        }
+    </script>
+</body>
+</html>
