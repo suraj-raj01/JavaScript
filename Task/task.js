@@ -1,5 +1,4 @@
 let b = document.getElementsByTagName('body');
-function mode()
-{
+function mode() {
     document.body.classList.toggle('demo')
 }
