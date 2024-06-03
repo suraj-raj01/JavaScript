@@ -9,13 +9,52 @@
             padding: 12px 25px;
             border: none;
             font-weight: bold;
-            background-color: teal;
+            background-color: black;
             color: white;
+            cursor: pointer;
+        }
+        td{
+            font-weight: bold;
+            text-align: center;
+            padding: 8px;
+            border: 1px solid;
+        }
+        table{
+            height: 75vh;
+            width: 90%;
+            margin: 0 auto;
+            border: 1px solid;
+        }
+        thead{
+            position: sticky;
+            top: 0px;
+            background-color: black;
+            color: white;
+            border: 1px solid;
+        }
+        div{
+            margin: 0 auto;
+            height: 78vh;
+            width: 90%;
+            overflow-y: scroll;
+            padding: 5px;
         }
     </style>
 </head>
 <body>
 <center><h1>API FETCHING</h1></center>
+<div>
+    <table border="">
+        <thead>
+            <td>Id</td>
+            <td>userId</td>
+            <td>title</td>
+        </thead>
+        <tbody id="showData">
+        </tbody>
+    </table>
+</div>
+<br>
 <center><button onclick="fet();">Fetch</button></center>
 <!-- 
 javascript is synchronous language.
