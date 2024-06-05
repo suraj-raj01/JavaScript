@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        form{
+            margin: 200px auto;
+            height: 300px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+        }
+        form input{
+            padding: 8px;
+        }
+        form #submit{
+            padding: 10px 20px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Id</label>
+        <input type="number" id="id">
+        <label for="">ProductName</label>
+        <input type="text" id="pr_name">
+        <label for="">Price</label>
+        <input type="number" id="price"><br><br>
+        <input type="submit" onclick="add();" id="submit">
+    </form>
+    <script src="fet.js"></script>
+</body>
+</html>

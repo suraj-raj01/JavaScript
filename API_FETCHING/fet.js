@@ -1,7 +1,7 @@
 async function fet()
 {
     let sh = document.getElementById("showData")
-    let a = await fetch("http://localhost:3000/student");
+    let a = await fetch("http://localhost:3000/product");
     let b = await a.json();
     let p = b.map((e)=>
     `
@@ -12,4 +12,21 @@ async function fet()
     </tr>
     `).join(" ");
     sh.innerHTML = p;
+}
+
+function add()
+{
+    let formData = {
+        id:document.getElementById("id").value,
+        pr_name:document.getElementById("pr_name").value,
+        price:document.getElementById("price").value
+    }
+    fetch("http://localhost:3000/product",{
+        method:"POST",
+        headers:{
+        'Content-type':'application/json'
+        },
+        body:JSON.stringify(formData)
+    })
+
 }
