@@ -9,10 +9,12 @@ async function fet()
     <td> ${e.id} </td>
     <td> ${e.pr_name} </td>
     <td> ${e.price} </td>
+    <td><button onclick="mydelete(${e.id});">Delete</button></td>
     </tr>
     `).join(" ");
     sh.innerHTML = p;
 }
+fet();
 
 function add()
 {
@@ -29,4 +31,12 @@ function add()
         body:JSON.stringify(formData)
     })
 
+}
+
+function mydelete(id)
+{
+    fetch(`http://localhost:3000/product/${id}`,{
+        method:"DELETE"
+    })
+    .then( res=> alert("data deleted successfully"))
 }

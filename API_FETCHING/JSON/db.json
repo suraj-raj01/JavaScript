@@ -1,89 +1,64 @@
 {
   "product": [
     {
-      "id": "1",
-      "pr_name": "Mobile",
-      "price": 30000
-    },
-    {
-      "id": "2",
-      "pr_name": "Laptop",
-      "price": 80000
-    },
-    {
       "id": "3",
-      "pr_name": "Tablet",
-      "price": 60000
+      "pr_name": "Laptop",
+      "price": "60000"
     },
     {
       "id": "4",
-      "pr_name": "PC",
-      "price": 60400
-    },
-    {
-      "id": "5",
-      "pr_name": "Keyboard",
-      "price": 300
-    },
-    {
-      "id": "6",
-      "pr_name": "DeskTop",
-      "price": 60000
-    },
-    {
-      "id": "7",
-      "pr_name": "Mouse",
-      "price": 150
-    },
-    {
-      "id": "8",
-      "pr_name": "Charger",
-      "price": 6400
-    },
-    {
-      "id": "9",
-      "pr_name": "Laptop",
-      "price": 30000
-    },
-    {
-      "id": "10",
       "pr_name": "Mobile",
-      "price": 12000
-    },
-    {
-      "id": "11",
-      "pr_name": "PC",
-      "price": 10500
-    },
-    {
-      "id": "12",
-      "pr_name": "Charger",
-      "price": 6400
-    },
-    {
-      "id": "13",
-      "pr_name": "Keyboard",
-      "price": 300
-    },
-    {
-      "id": "14",
-      "pr_name": "DeskTop",
-      "price": 60000
+      "price": "40000"
     },
     {
       "id": "1",
-      "pr_name": "laptop",
-      "price": "50000"
+      "pr_name": "Keyboard",
+      "price": "5000"
+    },
+    {
+      "id": "5",
+      "pr_name": "Nokia",
+      "price": "45000"
+    },
+    {
+      "id": "6",
+      "pr_name": "Apple",
+      "price": "60000"
+    },
+    {
+      "id": "8",
+      "pr_name": "Lenovo",
+      "price": "380000"
+    },
+    {
+      "id": "9",
+      "pr_name": "Dell",
+      "price": "60000"
+    },
+    {
+      "id": "11",
+      "pr_name": "Asus",
+      "price": "450000"
+    },
+    {
+      "id": "12",
+      "pr_name": "VivoBook",
+      "price": "32000"
+    },
+    {
+      "id": "14",
+      "pr_name": "realme",
+      "price": "75000"
     },
     {
       "id": "15",
-      "pr_name": "Samsum",
-      "price": "50000"
+      "pr_name": "Redmi",
+      "price": "65000"
     },
     {
-      "id": "19",
-      "pr_name": "Apple",
-      "price": "150000"
+      "id": "15",
+      "pr_name": "Micromax",
+      "price": "32000"
     }
   ]
 }

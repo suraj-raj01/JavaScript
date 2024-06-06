@@ -9,7 +9,7 @@
             background-color: black;
             color: white;
         }
-        button{
+        #btn{
             padding: 12px 25px;
             font-weight: bold;
             background-color: blue;
@@ -20,7 +20,7 @@
         td{
             font-weight: bold;
             text-align: center;
-            padding: 8px;
+            padding: 10px;
             border: 1px solid;
         }
         td:hover{
@@ -57,13 +57,14 @@
             <td>Id</td>
             <td>Product Name</td>
             <td>Price</td>
+            <td>Delete</td>
         </thead>
         <tbody id="showData">
         </tbody>
     </table>
 </div>
 <br>
-<center><button onclick="fet();">Fetch</button></center>
+<center><button onclick="fet();" id="btn">Fetch</button></center>
 <!-- 
 javascript is synchronous language.
 synchronous language execute code line by line
