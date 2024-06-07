@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API FETCHING</title>
     <style>
-        body{
-            background-color: black;
-            color: white;
-        }
         #btn{
             padding: 12px 25px;
             font-weight: bold;
@@ -17,7 +13,7 @@
             cursor: pointer;
             border: 1px solid;
         }
-        td{
+        table td{
             font-weight: bold;
             text-align: center;
             padding: 10px;
@@ -28,7 +24,7 @@
             color: white;
         }
         table{
-            height: 75vh;
+            /* height: 75vh; */
             width: 90%;
             margin: 0 auto;
             border: 1px solid;
@@ -43,7 +39,7 @@
         }
         div{
             margin: 0 auto;
-            height: 77vh;
+            height: 76vh;
             width: 90%;
             overflow-y: scroll;
         }
@@ -58,11 +54,25 @@
             <td>Product Name</td>
             <td>Price</td>
             <td>Delete</td>
+            <td>Edit</td>
         </thead>
         <tbody id="showData">
         </tbody>
     </table>
-</div>
+
+    </div>
+        <form action="" style="display: none;" id="myfrm">
+            <label for="">Id</label>
+            <input type="text" id="id">
+        
+            <label for="">Product Name</label>
+            <input type="text" id="pr_name">
+        
+            <label for="">Price</label>
+            <input type="text" id="price">
+        
+            <input type="submit" onclick="editdata();">
+         </form>
 <br>
 <center><button onclick="fet();" id="btn">Fetch</button></center>
 <!-- 
@@ -83,6 +93,9 @@ await don't work without async.
     2. json-sever --version  -> for checking virsion
     3. json-server --watch db.json  -> for local url
  -->
+
+
+
 <script src="fet.js"></script>
 </body>
 </html>

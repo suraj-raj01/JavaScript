@@ -10,6 +10,7 @@ async function fet()
     <td> ${e.pr_name} </td>
     <td> ${e.price} </td>
     <td><button onclick="mydelete(${e.id});">Delete</button></td>
+    <td><button onclick="myedit(${e.id});">Edit</button></td>
     </tr>
     `).join(" ");
     sh.innerHTML = p;
@@ -39,4 +40,31 @@ function mydelete(id)
         method:"DELETE"
     })
     .then( res=> alert("data deleted successfully"))
+}
+
+// Edit fucttions
+
+let strid = 0;
+function myedit(id)
+{
+    strid = id;
+    document.getElementById("myfrm").style.display="block";
+}
+
+function editdata()
+{
+    let myfrmdata = {
+        id:document.getElementById("strid").value,
+        pr_name:document.getElementById("pr_name").value,
+        price:document.getElementById("price").value
+    }
+
+    fetch(`http://localhost:3000/product/${strid}`,{
+        method:"PUT",
+        headers:{
+            'Content-type':'application/json'
+        },
+        body:JSON.stringify(myfrmdata)
+    })
+    .then(res=>alert("data edited!!!"))
 }
