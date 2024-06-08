@@ -13,21 +13,25 @@
             cursor: pointer;
             border: 1px solid;
         }
+        table button{
+            padding: 8px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        table button:hover{
+            background-color: black;
+            color: white;
+        }
         table td{
             font-weight: bold;
             text-align: center;
             padding: 10px;
             border: 1px solid;
         }
-        td:hover{
-            background-color: black;
-            color: white;
-        }
         table{
             /* height: 75vh; */
             width: 90%;
             margin: 0 auto;
-            border: 1px solid;
             background-color: blue;
         }
         thead{
@@ -37,44 +41,73 @@
             color: white;
             border: 1px solid;
         }
+        thead th{
+            padding: 8px;
+        }
         div{
             margin: 0 auto;
             height: 76vh;
             width: 90%;
             overflow-y: scroll;
+            /* border: 1px solid; */
+        }
+        form{
+            margin-left: 600px;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 230px;
+            gap: 10px;
+            border: 1px solid;
+            background-color: white;
+            border-radius: 10px;
+        }
+        form input{
+            margin-top: 20px;
+            padding: 10px;
+            margin-left: 50px;
         }
     </style>
 </head>
 <body>
 <center><h1>API FETCHING</h1></center>
 <div>
-    <table border="">
+    <table border="" width="90%">
         <thead>
-            <td>Id</td>
-            <td>Product Name</td>
-            <td>Price</td>
-            <td>Delete</td>
-            <td>Edit</td>
+            <th>Id</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Delete</th>
+            <th>Edit</th>
         </thead>
         <tbody id="showData">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tbody>
     </table>
 
     </div>
         <form action="" style="display: none;" id="myfrm">
-            <label for="">Id</label>
-            <input type="text" id="id">
+            <!-- <label for="">Id</label> -->
+            <input type="text" id="id" placeholder="Id">
         
-            <label for="">Product Name</label>
-            <input type="text" id="pr_name">
+            <!-- <label for="">Product Name</label> -->
+            <input type="text" id="pr_name" placeholder="Product Name">
         
-            <label for="">Price</label>
-            <input type="text" id="price">
+            <!-- <label for="">Price</label> -->
+            <input type="text" id="price" placeholder="Price">
         
             <input type="submit" onclick="editdata();">
          </form>
 <br>
-<center><button onclick="fet();" id="btn">Fetch</button></center>
+<!-- <center><button onclick="fet();" id="btn">Fetch</button></center> -->
 <!-- 
 javascript is synchronous language.
 synchronous language execute code line by line
