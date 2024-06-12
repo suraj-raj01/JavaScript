@@ -29,7 +29,7 @@ for(let val in k)
 let x = Object.values(ob);
 console.log(x);
 
-for(let v in ob)
+for(let v in x)
 {
-    console.log(v);
+    console.log(x[v]);
 }

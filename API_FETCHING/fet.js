@@ -20,9 +20,9 @@ fet();
 function add()
 {
     let formData = {
-        id:document.getElementById("id").value,
-        pr_name:document.getElementById("pr_name").value,
-        price:document.getElementById("price").value
+        "id":document.getElementById("id").value,
+        "pr_name":document.getElementById("pr_name").value,
+        "price":document.getElementById("price").value
     }
     fetch("http://localhost:3000/product",{
         method:"POST",
@@ -54,9 +54,9 @@ function myedit(id)
 function editdata()
 {
     let myfrmdata = {
-        id:document.getElementById("strid").value,
-        pr_name:document.getElementById("pr_name").value,
-        price:document.getElementById("price").value
+        "id":document.getElementById("id").value,
+        "pr_name":document.getElementById("pr_name").value,
+        "price":document.getElementById("price").value
     }
 
     fetch(`http://localhost:3000/product/${strid}`,{

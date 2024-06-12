@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        button{
+        button {
             border: 1px solid;
             padding: 12px 25px;
             border-radius: 5px;
@@ -14,32 +15,35 @@
             color: white;
             cursor: pointer;
         }
-        .demo{
+
+        .demo {
             background-color: black;
-            button{
-                background-color: black;
+
+            button {
+                background-color: white;
                 border: 1px solid green;
-                color: green;
+                color: black;
                 font-weight: bold;
             }
         }
     </style>
 </head>
+
 <body>
     <button>button</button>
     <script>
         let btn = document.querySelector("button");
-        btn.addEventListener("click",function()
-    {
-        let b = document.body;
-        let btn1 = document.createElement("button");
-        let txt1 = document.createTextNode("new Button");
-        btn1.appendChild(txt1);
-        b.appendChild(btn1)
-        btn1.addEventListener("click",function(){
-            document.body.classList.toggle("demo")
+        btn.addEventListener("click", function () {
+            let b = document.body;
+            let btn1 = document.createElement("button");
+            let txt1 = document.createTextNode("new Button");
+            btn1.appendChild(txt1);
+            b.appendChild(btn1)
+            btn1.addEventListener("click", function () {
+                document.body.classList.toggle("demo")
+            })
         })
-    })
     </script>
 </body>
+
 </html>

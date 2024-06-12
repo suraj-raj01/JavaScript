@@ -22,7 +22,7 @@ ar1 = [1,4,6,8,5];
 let concat = ar.concat(ar1);
 console.log(concat);
 
-// slice -> it is use to remove data using indexing.
+// slice -> it is use to print data using indexing.
 
 let arr = [1,2,3,4,5];
 let b = arr.slice(1,4);

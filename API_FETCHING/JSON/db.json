@@ -2,8 +2,13 @@
   "product": [
     {
       "id": "1",
-      "pr_name": "Micromax",
-      "price": "32000"
+      "pr_name": "Redmi",
+      "price": "16000"
+    },
+    {
+      "id": "2",
+      "pr_name": "Mobile",
+      "price": "15000"
     }
   ]
 }
