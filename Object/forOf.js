@@ -23,7 +23,7 @@ for(let i=0; i<a2.length; i++)
 }
 console.log(totalSum);
 // for of loop
-for(value of a2)
+for(let value of a2)
 {
     totalSum+=value;
 }

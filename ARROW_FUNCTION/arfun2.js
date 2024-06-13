@@ -23,3 +23,10 @@ console.log(d1(a1))
 let x = prompt("Enter the number: ");
 let y = () => x*x;
 console.log(y(x));
+
+let i = 10;
+let j = 20;
+let f = (i,j) => {
+    return i+j;
+}
+console.log(f(i,j))
