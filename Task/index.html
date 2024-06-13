@@ -8,119 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        nav {
-            height: 12vh;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-
-        ul {
-            list-style-type: none;
-            font-weight: bold;
-        }
-
-        nav #text {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 40px;
-            font-size: 20px;
-            padding: 0px 40px;
-        }
-
-        nav ul #logo {
-            font-size: 30px;
-        }
-
-        nav #btn {
-            background-color: transparent;
-            border: none;
-            font-size: 20px;
-        }
-
-        #hero {
-            height: 88vh;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #hero #box1 {
-            height: 30vh;
-            width: 32%;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: center;
-            gap: 20px;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        #hero #box1 #order {
-            font-size: 40px;
-        }
-
-        #btn1 {
-            background-color: gold;
-            padding: 14px 25px;
-            border: none;
-            color: black;
-            font-weight: bold;
-        }
-
-        #hero #box2 {
-            height: 60vh;
-            width: 40%;
-        }
-
-        #hero #box2 img {
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-        }
-
-        .demo {
-            background-color: black;
-            color: white;
-
-            #btn {
-                color: white;
-            }
-
-            #media i:hover {
-                background-color: gold;
-                color: black;
-                cursor: pointer;
-            }
-        }
-
-        #media {
-            display: flex;
-            gap: 10px;
-            font-size: 25px;
-        }
-
-        #media i {
-            border: 1px solid transparent;
-            padding: 5px 7px;
-            border-radius: 2px;
-        }
-
-        #media i:hover {
-            background-color: gold;
-            cursor: pointer;
-        }
-    </style>
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -154,7 +42,23 @@
             <img src="https://imgs.search.brave.com/Z4-GKU_UxgmEMUv9cskG607ij5WKIsScdhdUSuK3wwo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5ncGxheS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzkvSW4t/Ti1PdXQtQnVyZ2Vy/LVRyYW5zcGFyZW50/LUltYWdlcy5wbmc"
                 alt="">
         </div>
-    </div>
+        </div>
+            <div id="cards">
+                <div id="box"><div id="div1"></div><div id="div2"><p>price 230</p><button onclick="fun1()">Add Item</button></div></div>
+                <div id="box"><div id="div1"></div><div id="div2"><p>price 330</p><button onclick="fun2()">Add Item</button></div></div>
+                <div id="box"><div id="div1"></div><div id="div2"><p>price 299</p><button onclick="fun3()">Add Item</button></div></div>
+                <div id="box"><div id="div1"></div><div id="div2"><p>price 399</p><button onclick="fun4()">Add Item</button></div></div>
+            </div>
+            <div id="item">
+                <h1>Total Price Menu</h1>
+                <h2>Not of Items: <p id="itm">0</p></h2>
+                <h2>Total Price: <p id="res">0</p></h2>
+                <br>
+                <button onclick="hide();">ORDER HERE!!</button>
+            </div>
+            <div id="order-btn">
+                <button id="order" onclick="display()">ORDER NOW</button>
+            </div>
     <script src="task.js"></script>
 </body>
 

@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+nav #text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 20px;
+    padding: 0px 40px;
+}
+
+nav ul #logo {
+    font-size: 30px;
+}
+
+nav #btn {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+#hero {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero #box1 {
+    height: 300px;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#hero #box1 #order {
+    font-size: 40px;
+}
+
+#btn1 {
+    background-color: gold;
+    padding: 14px 25px;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+#hero #box2 {
+    height: 300px;
+    width: 40%;
+}
+
+#hero #box2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.demo {
+    background-color: black;
+    color: white;
+
+    #btn {
+        color: white;
+    }
+
+    #media i:hover {
+        background-color: gold;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+#media {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+}
+
+#media i {
+    border: 1px solid transparent;
+    padding: 5px 7px;
+    border-radius: 2px;
+}
+
+#media i:hover {
+    background-color: gold;
+    cursor: pointer;
+}
+
+#cards{
+    height: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto ;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#cards #box{
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#cards #box #div1{
+    background-image: url("https://th.bing.com/th/id/OIP.I1_EP5vcUGSO7usQD5DGkgHaEK?rs=1&pid=ImgDetMain");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+
+#cards #box #div2{
+    height: 80px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#cards button{
+    padding: 10px 25px;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+#cards p{
+    font-weight: bold;
+}
+
+#item{
+    height: 300px;
+    width: 400px;
+    padding: 10px 80px;
+    border: 2px solid;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 300px;
+    margin-left: 500px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    display: none;
+}
+#item button{
+    padding: 15px 40px;
+    border: 2px solid;
+    font-weight: bold;
+    font-size: 20px;
+}
+#order-btn{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#order{
+    padding: 15px 40px;
+    border: 2px solid;
+    font-weight: bold;
+    font-size: 20px;
+}
