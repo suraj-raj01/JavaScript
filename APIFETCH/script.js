@@ -2,9 +2,8 @@ async function fet()
 {
     let a = await fetch("https://jsonplaceholder.typicode.com/albums/1/photos");
     let re = await a.json();
-    let ot = "";
     let pl = document.getElementById('display_data');
-    let p = re.map((e)=>ot+=
+    let p = re.map((e)=>
 `
 <tr>
 <td>${e.id}</td>
