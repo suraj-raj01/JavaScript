@@ -8,6 +8,9 @@ console.log(ans);
 let ar2 = [1,2,3,4,5];
 // let b = ar2.splice(1,3);
 // console.log(b);
-let c = ar2.splice(1,3);
-console.log(c);
+// let c = ar2.splice(1,3);
+// console.log(c);
 console.log(ar2);
+
+let arr3 = [...arr,...ar2];
+console.log(arr3)
