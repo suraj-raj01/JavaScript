@@ -1,15 +1,16 @@
 async function fet()
 {
-    let a = await fetch("https://jsonplaceholder.typicode.com/albums/1/photos");
-    let re = await a.json();
+    let url = await fetch("https://jsonplaceholder.typicode.com/albums/1/photos");
+    let result = await url.json();
     let pl = document.getElementById('display_data');
-    let p = re.map((e)=>
+    let p = result.map((e)=>
 `
 <tr>
 <td>${e.id}</td>
 <td>${e.albumId}</td>
 <td>${e.title}</td>
-<td><img src="${e.url}"></td>
+<td><img src="${e.thumbnailUrl}"></td>
+<td><button>Delete</button></td>
 </tr>
 `).join(" ");
 pl.innerHTML = p;
